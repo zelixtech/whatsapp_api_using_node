@@ -1,0 +1,13 @@
+curl -i -X POST `
+  https://graph.facebook.com/v15.0/100453106272004/messages `
+  -H 'Authorization: Bearer EAAhbCazC7RMBACB8nDNqTCOjUZA8TIJJfu7r02bblrtWRUEUE0srXpmhJgZAhu5ZCVbNfKqrZCZBXAdZBrsj5U2ztkanNFkZCivPZCTUwxVh59IkR2Xb6hPZAFtpDvA6oSgjj5ZCFYxLfQyl6ZAlxTjc4qLFBxE6v4RZASW31wEuFzil7MYvPXNi6flaFjbNwJXflNjAZAZC5jWZB300QZDZD' `
+  -H 'Content-Type: application/json' `
+  -d '{ \"messaging_product\": \"whatsapp\", \"to\": \"919510342875\", \"type\": \"template\", \"template\": { \"name\": \"hello_world\", \"language\": { \"code\": \"en_US\" } } }'
+
+
+
+  curl -X POST 'https://graph.facebook.com/v15.0/<MEDIA_ID>/media' \
+-H 'Authorization: Bearer <ACCESS_TOKEN>' \
+-F 'file=@"2jC60Vdjn/cross-trainers-summer-sale.jpg"' \
+-F 'type="image/jpeg"' \
+-F 'messaging_product="whatsapp"'
